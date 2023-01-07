@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Sketch Classification</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+      <button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal">Show Sketches </button>
+      <center>
+        
+    <div id="myModal" class="modal fade">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Sketches</h4>
+        </div>
+        <div class="modal-body">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="sketch1.png" alt="Sketch Example 1">
+              </div>
+              <div class="item">
+                <img src="sketch2.png" alt="Sketch Example 2">
+              </div>
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <h1>Quick, Draw!</h1>
+        <hr>
+        <h4 id="label"><b>Label: </b></h4>
+        <br>
+        <button onclick="clear_canvas()" class="btn btn-info">Clear Canvas</button>
+        <button onclick="start_timer()" class="btn btn-info">Start</button>
+        <h3 id="hello">Draw...</h3>
+        <h4 id="timer">Timer: </h4>
+    </center>
+    <script src="main.js"></script>
+    <script src="https://www.drv.tw/inc/wd.js?s=annewebpageprojects-hey"></script></body>
+    </html>

@@ -1,0 +1,30 @@
+#show_sketch{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+h1{
+    margin-top: -20px;
+}
+
+body{
+    background-color: rgb(201, 255, 239);
+    font-family: "Shadows Into Light";
+}
+
+canvas{
+    margin-top: 250px;
+    animation-name: ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+}
+
+@keyframes ani{
+    from{
+        box-shadow: 1px 1px 30px #1ff4de;
+    }
+    to{
+        box-shadow: 1px 1px 30px #77f5e8;
+    }
+}   
